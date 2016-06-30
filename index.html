@@ -1,12 +1,53 @@
 <!doctype html>
 <html>
 <head>
+<style>
+#title{
+text-align:center;
+color:#900;
+}
+.project{
+display:inline-block;
+width:200px;
+height:200px;
+border-radius:5px;
+background-color:#fff;
+
+position:relative;
+}
+.project:hover{
+background-color:#bec;
+}
+.pict{
+margin:auto;
+height:150px;
+width:150px;
+}
+span{
+font-family:sans-serif;
+position:absolute;
+margin:auto;
+text-align:center;
+width:200px;
+}
+
+</style>
 </head>
-<body>
-<a href="/parametric">Parametric Grapher</a>
-<br>
-<a href="/shooter">Steam sale shooter</a>
-<br>
-<a href="/island">Procedural island generator</a>
+<body bgcolor="#ddd">
+<h2 id="title">Title</h2>
+<a href="/parametric"><div id="project1" class="project">
+<div class="pict"></div>
+<span>Parametric Grapher</span>
+</div></a>
+<a href="/shooter">
+<div id="project2" class="project">
+<div class="pict"></div>
+<span>Steam Sale Shooter</span>
+</div></a>
+<a href="/island">
+<div id="project3" class="project">
+<div class="pict"></div>
+<span>Procedural Island Generator</span>
+</div></a>
 </body>
 </html>
