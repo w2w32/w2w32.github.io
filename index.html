@@ -18,8 +18,11 @@ border-radius:5px;
 background-color:#fff;
 text-align:center;
 vertical-align:top;
+position:relative;
+z-index:0;
 }
 .project:hover{
+z-index:2;
 background-color:#bec;
 height:auto;
 }
@@ -43,11 +46,18 @@ font-size:14px;
 display:none;
 margin-bottom:5px;
 }
+.holder{
+display:inline-block;
+width:200px;
+height:200px;
+margin-top:2px;
+}
 </style>
 </head>
 <body bgcolor="#ddd">
 <h2>Javascript stuff</h2>
 <a href="/parametric">
+<div class="holder">
 <div id="project1" class="project">
 <img src="parametric_1.png" class="pict"></img>
 <span>Parametric Grapher</span>
@@ -55,30 +65,41 @@ margin-bottom:5px;
    that varies from tmin to tmax in increments of tstep) and the mouse's position 
    on the graph area. Each segment of the graph can also be colored according to 
    different functions. </div>
-</div></a>
+</div></div></a>
 <a href="/island">
+<div class="holder">
 <div id="project2" class="project">
 <img src="island_1.png" class="pict"></img>
 <span>Procedural Island Generation</span>
 <div class="description">Sort of like a cellular automaton but not really.</div>
-</div></a>
+</div></div></a>
 <a href="/shooter">
+<div class="holder">
 <div id="project3" class="project">
 <img src="steam_1.png" class="pict"></img>
 <span>Steam Sale Shooter</span>
   <div class="description">After nine years in development, hopefully it will have been worth the wait.</div>
-</div></a>
+</div></div></a>
 <a href="/platformer">
+<div class="holder">
 <div id="project4" class="project">
 <img src="platform_1.png" class="pict"></img>
 <span>Platformer Template</span>
   <div class="description">The level layout is stored in a string. Click to toggle a square.</div>
-</div></a>
+</div></div></a>
 <a href="/3d_graphics">
+<div class="holder">
 <div id="project5" class="project">
 <img src="3d_1.png" class="pict"></img>
 <span>3D Graphics Test</span>
   <div class="description">Basic framework for rotating shapes in 3D.</div>
-</div></a>
+</div></div></a>
+<a href="/transform">
+<div class="holder">
+<div id="project5" class="project">
+<img src="transform_1.png" class="pict"></img>
+<span>Linear Transformation</span>
+  <div class="description">Matrix-encoded function of points in the plane.</div>
+</div></div></a>
 </body>
 </html>
